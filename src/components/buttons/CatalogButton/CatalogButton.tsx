@@ -49,9 +49,9 @@ const CatalogButton: React.FC<CatalogButtonProps> = ({sx,catalogList,titleStyle,
       'aria-labelledby': 'basic-button',
     }}
   >
-    {/* {catalogList.map((el)=>(
+    {catalogList.map((el)=>(
     <CatalogButtonItem id={el.id} title={el.title} img={el.img}/>)
-    )} */}
+    )}
   </Menu></Box>
   )
 }

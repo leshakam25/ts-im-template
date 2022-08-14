@@ -6,8 +6,8 @@ import BarChartOutlinedIcon from '@mui/icons-material/BarChartOutlined';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import { Box, CardMedia, Container, InputAdornment, TextField, Typography } from '@mui/material'
-import logo from '../images/logo.svg'
-import SignInButton from './buttons/SignInButton';
+import logo from '../../images/logo.svg'
+import SignInButton from '../buttons/SignInButton';
 
 const headerStyle ={
 

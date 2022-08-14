@@ -1,5 +1,5 @@
-import Header from './components/Header'
-import HeaderNav from './components/HeaderNav'
+import Header from './components/Header/Header'
+import HeaderNav from './components/Header/HeaderNav'
 
 const App = () => {
   return (

@@ -1,7 +1,8 @@
 import { Container,Box } from '@mui/material'
 import React from 'react'
-import CatalogButton from './buttons/CatalogButton/CatalogButton'
-import {catalogList} from '../store/catalogList'
+import CatalogButton from '../buttons/CatalogButton/CatalogButton'
+import {catalogList} from '../../store/catalogList'
+
 const HeaderNavStyle = {
   container:{
     display: 'flex',
@@ -30,7 +31,6 @@ const HeaderNavStyle = {
 }
 
 const HeaderNav = () => {
-
 
   return (
     <Container maxWidth={false} sx={HeaderNavStyle.container}>
