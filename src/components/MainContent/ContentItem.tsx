@@ -12,7 +12,7 @@ const font ='Oswald'
 
 const itemStyle = {
   content:{
-    width:'326px',
+    width:'300px',
     height:'596px',
     border: '1px solid lightgray',
     borderRadius:'4px',

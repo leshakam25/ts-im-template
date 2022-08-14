@@ -10,7 +10,7 @@ interface MainContentProps<T>{
 export default function MainContent<T>(props:MainContentProps<T>){
 
   return (
-    <Container maxWidth='xl' sx={{display:'flex'}}>
+    <Container maxWidth='xl' sx={{display:'flex',flexFlow:'row wrap',justifyContent:'center'}}>
       {props.items.map(props.renderItem)}
     </Container>)
 }
