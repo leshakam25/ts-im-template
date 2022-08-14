@@ -7,27 +7,26 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import { Box, CardMedia, Container, InputAdornment, TextField, Typography } from '@mui/material'
 import logo from '../../images/logo.svg'
-import SignInButton from '../buttons/SignInButton';
+import SignInButton from '../Buttons/SignInButton';
 
 const headerStyle ={
 
   contacts:{
     display :{
+      xs:'none',
       sm:'none',
       md:'flex'
     },
     flexFlow: 'row wrap',
-    justifyContent:'space-between',
+    justifyContent:'center',
     alignItems:'center',
 
   },
 
   container:{
     display: 'flex',
-    flexFlow: 'row wrap',
-    justifyContent:{
-      sm:'space-between',
-    },
+    flexFlow: 'row nowrap',
+    justifyContent: 'space-between',
     alignItems:'center',
     height:'80px',
   },
@@ -53,7 +52,7 @@ const headerStyle ={
 
   search:{
     display: 'flex',
-    flexFlow: 'row wrap',
+    flexFlow: 'row nowrap',
     justifyContent:'space-between',
     alignItems:'center',
     color: '#838688'
@@ -61,6 +60,7 @@ const headerStyle ={
 
   findInput:{
     display :{
+      xs:'none',
       sm:'none',
       md:'block'
     },
@@ -91,7 +91,7 @@ const Header = () => {
    const workTime='Пн-вс: с 10:00 до 21:00'
 
   return (
-    <Container maxWidth={false} sx={headerStyle.container}>
+    <Container maxWidth='xl' sx={headerStyle.container}>
       <Box>
          <CardMedia component='img' src={logo} sx={headerStyle.logo} />
       </Box>

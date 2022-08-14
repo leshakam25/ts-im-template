@@ -1,26 +1,29 @@
-import { Box,  MenuItem,  Typography } from '@mui/material'
+import { Box,  Typography } from '@mui/material'
 import DensityMediumIcon from '@mui/icons-material/DensityMedium';
-import React, { useState } from 'react'
+import React  from 'react'
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
-import CatalogButtonItem from './CatalogButtonItem';
+// import CatalogButtonItem from './CatalogButtonItem';
 
 
-interface CatalogButtonProps {
-   sx:object;
+
+interface CatalogButtonProps<T> {
+  catalogList: T[];
    titleStyle: object;
-   catalogList:object;
    titleIconStyle: object;
+   sx:object;
+   renderItem:(item:T)=>React.ReactNode;
 }
 
-const CatalogButton: React.FC<CatalogButtonProps> = ({sx,catalogList,titleStyle,titleIconStyle}) => {
+
+
+export default function CatalogButton<T> (props:CatalogButtonProps<T>){
    const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
    const open = Boolean(anchorEl);
 
 
    const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
    setAnchorEl(event.currentTarget);
-   console.log('catalogList',catalogList)
   };
  
   const handleClose = () => {
@@ -28,7 +31,7 @@ const CatalogButton: React.FC<CatalogButtonProps> = ({sx,catalogList,titleStyle,
   };
 
    return (
-   <Box sx={sx}>
+   <Box sx={props.sx}>
    <Button
     id="basic-button"
     aria-controls={open ? 'basic-menu' : undefined}
@@ -36,8 +39,10 @@ const CatalogButton: React.FC<CatalogButtonProps> = ({sx,catalogList,titleStyle,
     aria-expanded={open ? 'true' : undefined}
     onClick={handleClick}
   >
-    <Box sx={titleIconStyle}><DensityMediumIcon/></Box>
-    <Typography sx={titleStyle}> Каталог товаров </Typography>
+    <Box sx={props.titleIconStyle}>
+      <DensityMediumIcon/>
+      <Typography sx={props.titleStyle}> Каталог товаров </Typography>
+    </Box>
   </Button>
 
   <Menu
@@ -49,11 +54,9 @@ const CatalogButton: React.FC<CatalogButtonProps> = ({sx,catalogList,titleStyle,
       'aria-labelledby': 'basic-button',
     }}
   >
-    {catalogList.map((el)=>(
-    <CatalogButtonItem id={el.id} title={el.title} img={el.img}/>)
-    )}
-  </Menu></Box>
+   {props.catalogList.map(props.renderItem)}
+  </Menu>
+   </Box>
   )
 }
 
-export default CatalogButton
