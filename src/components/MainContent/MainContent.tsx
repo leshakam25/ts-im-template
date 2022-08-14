@@ -6,7 +6,6 @@ interface MainContentProps<T>{
   renderItem:(item:T)=>React.ReactNode
 }
 
-
 export default function MainContent<T>(props:MainContentProps<T>){
 
   return (
