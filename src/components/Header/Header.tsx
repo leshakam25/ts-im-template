@@ -1,10 +1,10 @@
 import React from 'react'
 import SearchIcon from '@mui/icons-material/Search';
-import RemoveRedEyeOutlinedIcon from '@mui/icons-material/RemoveRedEyeOutlined';
-import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
-import BarChartOutlinedIcon from '@mui/icons-material/BarChartOutlined';
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
+// import RemoveRedEyeOutlinedIcon from '@mui/icons-material/RemoveRedEyeOutlined';
+// import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
+// import BarChartOutlinedIcon from '@mui/icons-material/BarChartOutlined';
+// import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+// import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import { Box, CardMedia, Container, InputAdornment, TextField, Typography } from '@mui/material'
 import logo from '../../images/logo.svg'
 import SignInButton from '../Buttons/SignInButton';
@@ -32,7 +32,7 @@ const headerStyle ={
   },
 
   logo :{
-    width:'auto', height:'60px'
+    width:'198px', height:'60px'
   },
 
   phone :{
@@ -108,11 +108,11 @@ const Header = () => {
             </InputAdornment>
           )
         }}/>
-        <RemoveRedEyeOutlinedIcon/>
+        {/* <RemoveRedEyeOutlinedIcon/>
         <FavoriteBorderOutlinedIcon/>
         <BarChartOutlinedIcon/>
         <ShoppingCartOutlinedIcon/>
-        <AccountCircleOutlinedIcon/>
+        <AccountCircleOutlinedIcon/> */}
         <SignInButton sx={headerStyle.signInButton} title='Войти'/>
       </Box>
     </Container>

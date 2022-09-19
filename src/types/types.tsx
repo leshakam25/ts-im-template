@@ -1,16 +1,15 @@
 export interface IItem {
    id: number,
    title: string,
+   rate:number,
+   made?:string,
    type: string,
-   price: number,
+   price?: number,
    lastPrice: number,
-   discount: number,
-   rate: number,
-   favorite: boolean,
-   waterProof: boolean,
-   new: boolean,
-   hit: boolean,
+   discount: boolean,
    img: string,
+   maxSpeed?:string,
+   powerReserve?:string
 }
 
 export interface ICatalogButtonItem {

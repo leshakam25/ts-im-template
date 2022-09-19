@@ -4,6 +4,7 @@ import MainContent from './components/MainContent/MainContent'
 import {items} from './store/items'
 import { IItem } from './types/types'
 import ContentItem from './components/MainContent/ContentItem'
+import Footer from './components/Footer/Footer'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       items={items}
       renderItem={(item:IItem)=><ContentItem item={item} key={item.id}/>}
       />
+      <Footer/>
     </>
   )
 }

@@ -10,8 +10,8 @@ interface CatalogButtonItemProps {
 const CatalogButtonItem: React.FC<CatalogButtonItemProps>  = ({item}) => {
   return (
         <MenuItem key={item.id}>
-          <CardMedia  component='img' src={item.img} sx={{height:'24px', width:'24px'}}/>
-          <Typography sx={{pl:1}}>{item.title}</Typography>
+          <CardMedia  component='img' src={item.img} sx={{height:'72px', width:'auto'}}/>
+          <Typography sx={{pl:1, fontSize:28}}>{item.title}</Typography>
         </MenuItem>
   )
 }

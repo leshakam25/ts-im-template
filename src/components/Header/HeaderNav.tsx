@@ -7,59 +7,54 @@ import CatalogButtonItem from '../Buttons/CatalogButton/CatalogButtonItem';
 export const catalogList = [
   {
     id: 0,
-    img: "https://i.postimg.cc/CLBqNTyH/menu-icons.png",
-    title: "Гироскутеры",
+    img: "https://i.postimg.cc/Zn7JRFJm/ln97jm1ci4buo5o0ar8movmm2hc19fgo.png",
+    title: "Распродажа",
   },
   {
     id: 1,
-    img: "https://i.postimg.cc/R0R6Fvf9/menu-icons.png",
-    title: "Электросамокаты",
+    img: "https://i.postimg.cc/K8K81VKH/04aqui40pmg8aqmuxwlm6lkvomzyq7uv.png",
+    title: "Электромотоциклы",
   },
   {
     id: 2,
-    img: "https://i.postimg.cc/kGDtzL2C/menu-icons.png",
-    title: "Моноколеса",
+    img: "https://i.postimg.cc/gJKz9b5n/yh9pd9fbahpdqse2ih9329pgod34spqi.png",
+    title: "Электроквадроциклы",
   },
   {
     id: 3,
-    img: "https://i.postimg.cc/zDPhKDQG/menu-icons.png",
-    title: "Сигвеи и мини-сигвеи",
+    img: "https://i.postimg.cc/3wmrBvFj/sawmwri3b6opxwcngun1gvr73ymexpe5.png",
+    title: "Электроснегоходы",
   },
   {
     id: 4,
-    img: "https://i.postimg.cc/R0R6Fvf9/menu-icons.png",
+    img: "https://i.postimg.cc/65bQ5wQZ/9j1q3oi8bpdtyzaab5xkemow1a7yifud.png",
     title: "Электроскутеры",
   },
   {
     id: 5,
-    img: "https://i.postimg.cc/jSynpHSD/menu-icons.png",
+    img: "https://i.postimg.cc/wvzqbjwC/fe7mybak5tz5kv48xel9qb5evbw2ahir.png",
     title: "Электровелосипеды",
   },
   {
     id: 6,
-    img: "https://i.postimg.cc/4dW98XNw/menu-icons-electric-skate.png",
-    title: "Электроскейты",
-  },
-  {
-    id: 7,
-    img: "https://i.postimg.cc/hGgQcXXp/menu-icons.png",
+    img: "https://i.postimg.cc/L8r6LTL6/y73wv1h43erj9gurxkm2xbm1u146o3be.png",
     title: "Электромобили",
   },
   {
+    id: 7,
+    img: "https://i.postimg.cc/bYTJW1c3/hdblre51njgkni4sqnct01g4knfp403y.png",
+    title: "Багги / UTV",
+  }, {
     id: 8,
-    img: "https://i.postimg.cc/MT6Bbnxv/menu-icons.png",
-    title: "Аксессуары",
+    img: "https://i.postimg.cc/9fshvFJm/tricikl.png",
+    title: "Электротрициклы",
   },
   {
     id: 9,
-    img: "https://i.postimg.cc/wTCs4fgK/menu-icons.png",
-    title: "Умные игрушки",
+    img: "https://i.postimg.cc/sDgXr13y/3kudbac5epxgsd951yljeljy1w5eesg8.png",
+    title: "Для детей",
   },
-  {
-    id: 10,
-    img: "https://i.postimg.cc/2yJBDTWZ/menu-icons-smart-watch.png",
-    title: "Smart Watch",
-  },
+
 ];
 
 const HeaderNavStyle = {
